@@ -88,7 +88,7 @@ class GroceryListItem extends React.Component {
   }
   render() {
     var style = {
-      textDecoration: this.state.done? 'line-through' : 'none'
+      fontWeight: this.state.done? 'bold' : 'none'
     };
     return (
       <li style={style} onClick={this.onListItemClick.bind(this)}>{this.props.items}</li>
